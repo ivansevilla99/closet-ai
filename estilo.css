@@ -1,0 +1,40 @@
+/* La misma paleta que la app: papel crema y tinta. */
+:root {
+  --papel: #FAF8F4;
+  --tarjeta: #F1EFEA;
+  --tinta: #17171A;
+  --suave: #6B6862;
+  --percha: #9E6B38;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 20px;
+  background: var(--papel);
+  color: var(--tinta);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 680px; margin: 0 auto; padding-block: 64px 96px; }
+header { margin-bottom: 48px; }
+.marca { font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: var(--suave); }
+h1 { font-size: 40px; line-height: 1.15; margin: 8px 0 12px; letter-spacing: -.02em; }
+h2 { font-size: 22px; margin: 40px 0 10px; letter-spacing: -.01em; }
+h3 { font-size: 17px; margin: 28px 0 6px; }
+p, li { color: #2B2A27; }
+.entradilla { font-size: 20px; color: var(--suave); margin-top: 0; }
+.fecha { font-size: 15px; color: var(--suave); }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: var(--percha); text-underline-offset: 3px; }
+.tarjeta { background: var(--tarjeta); border-radius: 18px; padding: 22px 26px; margin: 28px 0; }
+.tarjeta p:last-child { margin-bottom: 0; }
+.tarjeta p:first-child { margin-top: 0; }
+nav.idiomas { margin-top: 56px; padding-top: 24px; border-top: 1px solid #E2DFD8; font-size: 15px; color: var(--suave); }
+nav.idiomas a { margin-right: 14px; }
+footer { margin-top: 12px; font-size: 14px; color: var(--suave); }
+@media (prefers-color-scheme: dark) {
+  :root { --papel: #111112; --tarjeta: #1E1E20; --tinta: #F2F0EC; --suave: #9A968E; }
+  p, li { color: #D9D6D0; }
+  nav.idiomas { border-top-color: #2C2C2E; }
+}
