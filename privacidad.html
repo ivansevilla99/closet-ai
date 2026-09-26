@@ -12,77 +12,108 @@
 <header>
   <div class="marca">Closet AI</div>
   <h1>Política de privacidad</h1>
-  <p class="fecha">Última actualización: 15 de septiembre de 2026</p>
+  <p class="fecha">Última actualización: 26 de septiembre de 2026</p>
 </header>
 
-<p>Closet AI está pensada para funcionar en tu iPhone. La mayor parte de lo que hace no sale del
-dispositivo, y lo que sale está aquí explicado sin rodeos.</p>
+<p>Closet AI funciona casi entero en tu iPhone. Aquí está qué se queda en el dispositivo, qué sale, cuándo, a quién y durante cuánto tiempo.</p>
+
+<h2>Responsable</h2>
+<p>Iván Sevilla, desarrollador de Closet AI (España). Contacto: <a href="mailto:ivan.sevilla.ruano@gmail.com">ivan.sevilla.ruano@gmail.com</a>.</p>
 
 <h2>No hay cuenta</h2>
-<p>No te pedimos correo, ni contraseña, ni nombre real. No hay registro ni inicio de sesión. El
-nombre que escribes en el onboarding se usa solo para saludarte y no sale de tu iPhone.</p>
+<p>No hay registro ni inicio de sesión. No te pedimos correo, contraseña ni nombre real.</p>
 
-<h2>Lo que nunca sale de tu dispositivo</h2>
+<h2>Lo que se queda en tu iPhone</h2>
 <ul>
-  <li><strong>Tus fotos y los recortes</strong> de tus prendas.</li>
-  <li><strong>Tu armario</strong>: prendas, outfits, etiquetas, calendario de uso.</li>
-  <li><strong>Dónde guardas la ropa</strong>. Esa información habla de tu casa y se queda en el móvil.</li>
-  <li><strong>Tu perfil de estilo</strong> y lo que la app aprende de tus decisiones.</li>
-  <li><strong>Las estadísticas de uso</strong> internas, que son contadores locales.</li>
+  <li>Las fotos de tus prendas y sus recortes, tu armario, tus outfits, el calendario de lo que te pones, las etiquetas y los sitios donde guardas la ropa.</li>
+  <li>El nombre y la foto de perfil que pongas al empezar.</li>
+  <li>Tu perfil de estilo: tus respuestas y lo que la app aprende de tus valoraciones.</li>
+  <li>La foto de referencia de «Ver en mí» y el avatar que se obtiene de ella. Estos dos archivos se excluyen de las copias de seguridad del iPhone.</li>
+  <li>Las imágenes que genera «Ver en mí», guardadas junto a tus prendas.</li>
+  <li>Unos contadores de uso internos. Solo salen del iPhone si exportas el resumen desde Ajustes y decides compartirlo; ese resumen no incluye fotos ni los sitios donde guardas la ropa.</li>
 </ul>
+<p>El escaneo gratuito recorta y clasifica la prenda en el propio iPhone, con las herramientas de Apple y un modelo propio, sin enviar nada. Si la prenda aparece puesta en una foto, el iPhone detecta la silueta y la postura para recortarla mejor. No se reconoce ni se identifica a nadie.</p>
 
-<h2>Lo que sí sale, y cuándo</h2>
+<h2>Lo que sale del iPhone, y cuándo</h2>
 
 <h3>Acabado de estudio (Closet AI Pro)</h3>
-<p>Si activas el acabado de estudio, al escanear una prenda <strong>la foto se envía a nuestro
-servicio</strong>, que la pasa por el modelo de OpenAI para separar la prenda del fondo y describir
-sus atributos. La foto <strong>no se almacena</strong> en nuestro servicio: se procesa y se descarta.
-El tratamiento por parte de OpenAI se rige por sus condiciones para uso vía API.</p>
-<p>Con el acabado de estudio desactivado, <strong>ninguna foto sale de tu iPhone</strong>.</p>
-
-<h3>Control de consumo</h3>
-<p>Para aplicar los límites de escaneos y controlar el coste, guardamos en nuestra base de datos, por
-cada escaneo hecho con el acabado de estudio:</p>
+<p>Solo con Pro y el acabado de estudio activado. Al escanear una prenda, la foto se envía a nuestro servicio y de allí a OpenAI, que separa la prenda del fondo y describe sus atributos (tipo, color, estampado…).</p>
 <ul>
-  <li>el <strong>identificador de proveedor</strong> de tu dispositivo (el que da iOS, distinto para
-  cada desarrollador y que se borra al desinstalar la app),</li>
-  <li>la fecha y la duración del escaneo,</li>
-  <li>el modelo usado y el coste en tokens.</li>
+  <li>Si en la foto hay una persona, antes se envía la foto para localizar cada prenda y que elijas cuál guardar.</li>
+  <li>Con «Ahorrar cuando no hace falta», una foto sobre fondo liso se recorta en el iPhone, pero se envía igualmente para describir sus atributos.</li>
+  <li>La foto se reduce y se vuelve a comprimir antes de enviarse.</li>
+  <li>Sin Pro, o con el acabado de estudio desactivado, ninguna foto de prenda sale de tu iPhone.</li>
 </ul>
-<p>No se guarda la foto, ni la prenda, ni nada que describa tu ropa.</p>
+
+<h3>«Ver en mí» (Closet AI Pro)</h3>
+<p>Solo cuando pulsas «Ver en mí» o «Actualizar en mí» se envían a nuestro servicio, y de allí a OpenAI, tu <strong>avatar</strong> (tu figura recortada de la foto de referencia, con cara y cuerpo, sobre un fondo neutro) y una <strong>composición con las prendas</strong> del look. OpenAI genera la imagen de ti con ese look y vuelve a tu iPhone. La foto de referencia original no sale del iPhone. No se usa para reconocerte ni para buscarte en tu fototeca.</p>
+
+<h3>Identificador del dispositivo</h3>
+<p>Cada petición a nuestro servicio lleva el «identificador de proveedor» que asigna iOS. Es distinto para cada desarrollador, no es el identificador publicitario y cambia si borras todas nuestras apps del iPhone y las vuelves a instalar. Lo usamos para aplicar los límites de uso y controlar el coste.</p>
+
+<h3>Suscripciones</h3>
+<p>Los pagos los procesa Apple; no vemos tu tarjeta ni tus datos de pago. El estado de la suscripción lo gestiona RevenueCat, que recibe un identificador anónimo generado por su propio SDK, el recibo de compra de Apple y datos técnicos del dispositivo (tipo de dispositivo y versión del sistema).</p>
 
 <h3>El tiempo</h3>
-<p>Si activas la ubicación, la app envía a <a href="https://open-meteo.com">Open-Meteo</a> una
-coordenada <strong>redondeada a dos decimales</strong> —algo más de un kilómetro— como mucho
-<strong>una vez por hora</strong>, para saber qué temperatura hace. No guardamos esa coordenada ni
-tu historial de posiciones. Sin permiso, la app estima el tiempo por la época del año.</p>
+<p>Si das permiso de ubicación, la app pide el tiempo a Open-Meteo con tu ubicación redondeada a dos decimales (algo más de un kilómetro), como mucho una vez por hora. La petición va directa del iPhone a Open-Meteo; nosotros no la recibimos. Sin permiso, el tiempo se estima por la época del año.</p>
 
-<h2>Lo que no hacemos</h2>
+<h2>Qué guarda nuestro servicio</h2>
 <ul>
-  <li>No vendemos ni cedemos tus datos a nadie.</li>
-  <li>No hay publicidad ni redes de seguimiento.</li>
-  <li>No hay analítica de terceros: ni Google Analytics, ni Facebook SDK, ni similares.</li>
-  <li>No creamos perfiles publicitarios ni te seguimos entre apps.</li>
+  <li><strong>Registro de consumo</strong>, en una base de datos en la UE (Fráncfort): por cada escaneo con acabado de estudio y cada prueba de «Ver en mí», el identificador del dispositivo, el tipo de uso, el modelo empleado, el tamaño y la calidad, la duración, los tokens, el coste, un identificador de la petición y la fecha y hora. Sirve para aplicar los límites de uso y controlar el coste.</li>
+  <li><strong>Registros técnicos</strong> del servidor: el identificador del dispositivo, el tipo de uso, el coste, la duración, el motivo técnico si algo falla, y los datos habituales de cualquier petición web (dirección IP, app o navegador, ruta y hora).</li>
+  <li><strong>No guardamos</strong> tus fotos, tu avatar ni las imágenes generadas: se procesan durante la petición y se descartan.</li>
+</ul>
+
+<h2>Proveedores</h2>
+<ul>
+  <li><strong>OpenAI</strong> (EE. UU.): procesa las fotos, el avatar y la composición del acabado de estudio y de «Ver en mí».</li>
+  <li><strong>Vercel</strong> (EE. UU.): aloja nuestro servicio.</li>
+  <li><strong>Supabase</strong> (UE, Fráncfort): aloja el registro de consumo.</li>
+  <li><strong>RevenueCat</strong> (EE. UU.): estado de las suscripciones.</li>
+  <li><strong>Apple</strong>: pagos, App Store y TestFlight.</li>
+  <li><strong>Open-Meteo</strong>: el tiempo, solo con permiso de ubicación.</li>
+</ul>
+<p>Algunos de estos proveedores tratan datos fuera del Espacio Económico Europeo. Lo hacen como encargados del tratamiento, bajo sus acuerdos de tratamiento de datos y las garantías que estos prevén para las transferencias internacionales.</p>
+<p>Aparte de RevenueCat, la app no incluye SDKs de terceros: ni publicidad, ni analítica de terceros, ni seguimiento entre apps.</p>
+
+<h2>Cuánto tiempo se conserva</h2>
+<ul>
+  <li><strong>Lo que está en tu iPhone:</strong> hasta que lo borres o desinstales la app.</li>
+  <li><strong>Lo enviado a OpenAI:</strong> OpenAI no lo usa para entrenar sus modelos. Conserva lo que recibe por su API hasta 30 días para vigilar abusos, salvo que la ley le obligue a más. La descripción de atributos de una prenda puede quedar además hasta 30 días en su sistema.</li>
+  <li><strong>Registros técnicos del servidor:</strong> según el plan del proveedor de alojamiento; hoy, una hora.</li>
+  <li><strong>Registro de consumo:</strong> mientras el servicio esté activo, para aplicar los límites. Puedes pedir que se borre.</li>
+  <li><strong>Datos de suscripción:</strong> según las condiciones de RevenueCat como encargado del tratamiento.</li>
+</ul>
+
+<h2>Cómo borrar tus datos</h2>
+<ul>
+  <li>Una prenda o un outfit: desde su detalle o su menú.</li>
+  <li>Ajustes → «Eliminar foto» borra tu foto de referencia, tu avatar y las pruebas generadas.</li>
+  <li>Ajustes → «Borrar todo el armario» borra prendas, outfits, calendario y todas las imágenes de la app (prendas, foto de perfil y pruebas generadas). <strong>No borra</strong> tu nombre ni tu perfil de estilo, los sitios guardados, ni la foto de referencia y el avatar de «Ver en mí»; esos se borran con «Eliminar foto» o desinstalando la app.</li>
+  <li>Desinstalar la app borra todo lo que guarda en el iPhone (no las copias de seguridad que ya existan).</li>
+  <li>Para que borremos el registro de consumo de tu dispositivo, escríbenos. Como no hay cuenta, te ayudaremos a identificarlo (por ejemplo, con la fecha aproximada de uso).</li>
+</ul>
+
+<h2>Por qué tratamos estos datos</h2>
+<ul>
+  <li>Para darte las funciones que pides, incluidas las de pago (ejecución del contrato).</li>
+  <li>La ubicación y la foto de «Ver en mí», porque tú decides darlas y puedes retirarlas cuando quieras (consentimiento).</li>
+  <li>Los límites de uso y los registros técnicos, para que el servicio funcione, no se abuse de él y su coste esté bajo control (interés legítimo).</li>
 </ul>
 
 <h2>Tus derechos</h2>
-<p>Como no hay cuenta, el control es directo: <strong>Ajustes → Borrar todo el armario</strong>
-elimina todo lo que la app guarda, y desinstalarla se lleva el resto. Si quieres que borremos los
-registros de consumo asociados a tu dispositivo, escríbenos y lo hacemos.</p>
-<p>Si resides en la UE, el Reglamento General de Protección de Datos te ampara. Responsable del
-tratamiento: Iván Sevilla. Contacto: <a href="mailto:ivan.sevilla.ruano@gmail.com">ivan.sevilla.ruano@gmail.com</a>.</p>
+<p>Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:ivan.sevilla.ruano@gmail.com">ivan.sevilla.ruano@gmail.com</a>. Si crees que no se han respetado, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
+
+<h2>Lo que no hacemos</h2>
+<p>No vendemos ni cedemos tus datos. No hay publicidad, ni perfiles publicitarios, ni seguimiento entre apps.</p>
 
 <h2>Menores</h2>
-<p>Closet AI no está dirigida a menores de 13 años y no recoge conscientemente sus datos.</p>
+<p>Closet AI no está dirigida a menores de 14 años y no recoge conscientemente sus datos.</p>
 
 <h2>Cambios</h2>
-<p>Si esta política cambia, actualizaremos la fecha de arriba. Los cambios importantes se avisarán
-dentro de la app.</p>
+<p>Si esta política cambia, actualizaremos la fecha de arriba y avisaremos dentro de la app de los cambios importantes.</p>
 
-<h2>Contacto</h2>
-<p><a href="mailto:ivan.sevilla.ruano@gmail.com">ivan.sevilla.ruano@gmail.com</a></p>
-
-<nav class="idiomas"><a href="/">Español</a><a href="/en/">English</a><a href="/fr/">Français</a></nav>
+<nav class="idiomas"><a href="/closet-ai/privacidad.html">Español</a><a href="/closet-ai/en/privacy.html">English</a><a href="/closet-ai/fr/confidentialite.html">Français</a></nav>
 <footer>Closet AI · Iván Sevilla</footer>
 </main>
 </body>

@@ -12,79 +12,108 @@
 <header>
   <div class="marca">Closet AI</div>
   <h1>Politique de confidentialité</h1>
-  <p class="fecha">Dernière mise à jour : 15 septembre 2026</p>
+  <p class="fecha">Dernière mise à jour : 26 septembre 2026. En cas de divergence, la version espagnole prévaut.</p>
 </header>
 
-<p>Closet AI est conçue pour fonctionner sur votre iPhone. L'essentiel de ce qu'elle fait ne quitte
-jamais l'appareil, et ce qui en sort est expliqué ici sans détour.</p>
+<p>Closet AI fonctionne presque entièrement sur votre iPhone. Voici ce qui reste sur l’appareil, ce qui en sort, quand, vers qui et pour combien de temps.</p>
 
-<h2>Il n'y a pas de compte</h2>
-<p>Nous ne demandons ni e-mail, ni mot de passe, ni nom réel. Aucune inscription, aucune connexion. Le
-prénom saisi lors de la configuration sert uniquement à vous saluer et ne quitte pas votre iPhone.</p>
+<h2>Responsable</h2>
+<p>Iván Sevilla, développeur de Closet AI (Espagne). Contact : <a href="mailto:ivan.sevilla.ruano@gmail.com">ivan.sevilla.ruano@gmail.com</a>.</p>
 
-<h2>Ce qui ne quitte jamais votre appareil</h2>
+<h2>Pas de compte</h2>
+<p>Il n’y a ni inscription ni connexion. Nous ne vous demandons ni e-mail, ni mot de passe, ni vrai nom.</p>
+
+<h2>Ce qui reste sur votre iPhone</h2>
 <ul>
-  <li><strong>Vos photos et les détourages</strong> de vos vêtements.</li>
-  <li><strong>Votre garde-robe</strong> : vêtements, tenues, étiquettes, calendrier des ports.</li>
-  <li><strong>L'endroit où vous rangez vos vêtements.</strong> Cela en dit long sur votre logement, et
-  cela reste sur le téléphone.</li>
-  <li><strong>Votre profil de style</strong> et ce que l'app apprend de vos décisions.</li>
-  <li><strong>Les statistiques d'usage</strong> internes, de simples compteurs locaux.</li>
+  <li>Les photos de vos vêtements et leurs détourages, votre garde-robe, vos tenues, le calendrier de ce que vous portez, les étiquettes et les endroits où vous rangez vos vêtements.</li>
+  <li>Le nom et la photo de profil que vous ajoutez au début.</li>
+  <li>Votre profil de style : vos réponses et ce que l’app apprend de vos avis.</li>
+  <li>La photo de référence de « Voir sur moi » et l’avatar qui en est tiré. Ces deux fichiers sont exclus des sauvegardes de l’iPhone.</li>
+  <li>Les images générées par « Voir sur moi », conservées avec vos vêtements.</li>
+  <li>Quelques compteurs d’utilisation internes. Ils ne quittent votre iPhone que si vous exportez le résumé depuis les Réglages et choisissez de le partager ; ce résumé ne contient ni photos ni lieux de rangement.</li>
 </ul>
+<p>La numérisation gratuite détoure et classe le vêtement sur l’iPhone, avec les outils d’Apple et notre propre modèle, sans rien envoyer. Si le vêtement est porté sur la photo, l’iPhone détecte la silhouette et la posture pour mieux le détourer. Personne n’est reconnu ni identifié.</p>
 
-<h2>Ce qui en sort, et quand</h2>
+<h2>Ce qui quitte votre iPhone, et quand</h2>
 
 <h3>Finition studio (Closet AI Pro)</h3>
-<p>Si vous activez la finition studio, la numérisation d'un vêtement <strong>envoie la photo à notre
-service</strong>, qui la transmet au modèle d'OpenAI pour séparer le vêtement du fond et décrire ses
-attributs. La photo <strong>n'est pas conservée</strong> par notre service : elle est traitée puis
-supprimée. Le traitement par OpenAI relève de ses conditions d'utilisation via API.</p>
-<p>Avec la finition studio désactivée, <strong>aucune photo ne quitte votre iPhone</strong>.</p>
-
-<h3>Limites d'utilisation</h3>
-<p>Pour appliquer les limites de numérisation et maîtriser les coûts, nous enregistrons dans notre base
-de données, pour chaque numérisation faite avec la finition studio :</p>
+<p>Uniquement avec Pro et la finition studio activée. Quand vous numérisez un vêtement, la photo est envoyée à notre service puis à OpenAI, qui sépare le vêtement du fond et décrit ses attributs (type, couleur, motif…).</p>
 <ul>
-  <li>l'<strong>identifiant fournisseur</strong> de votre appareil (celui fourni par iOS, différent pour
-  chaque développeur et effacé à la désinstallation),</li>
-  <li>la date et la durée de la numérisation,</li>
-  <li>le modèle utilisé et le coût en jetons.</li>
+  <li>S’il y a une personne sur la photo, la photo est d’abord envoyée pour repérer chaque vêtement afin que vous choisissiez lequel enregistrer.</li>
+  <li>Avec « Économiser quand ce n’est pas nécessaire », une photo sur fond uni est détourée sur l’iPhone, mais elle est tout de même envoyée pour décrire ses attributs.</li>
+  <li>La photo est réduite et recompressée avant l’envoi.</li>
+  <li>Sans Pro, ou avec la finition studio désactivée, aucune photo de vêtement ne quitte votre iPhone.</li>
 </ul>
-<p>Nous n'enregistrons ni la photo, ni le vêtement, ni rien qui décrive vos habits.</p>
 
-<h3>La météo</h3>
-<p>Si vous activez la localisation, l'app envoie à <a href="https://open-meteo.com">Open-Meteo</a> une
-coordonnée <strong>arrondie à deux décimales</strong> — un peu plus d'un kilomètre — au maximum
-<strong>une fois par heure</strong>, pour connaître la température du jour. Nous ne conservons ni cette
-coordonnée ni aucun historique de position. Sans autorisation, l'app estime la météo selon la saison.</p>
+<h3>« Voir sur moi » (Closet AI Pro)</h3>
+<p>Uniquement lorsque vous touchez « Voir sur moi » ou « Actualiser sur moi », votre <strong>avatar</strong> (votre silhouette détourée de la photo de référence, visage et corps, sur un fond neutre) et une <strong>composition des vêtements</strong> de la tenue sont envoyés à notre service puis à OpenAI. OpenAI génère l’image de vous avec cette tenue, qui revient sur votre iPhone. La photo de référence d’origine ne quitte jamais l’iPhone. Elle ne sert pas à vous reconnaître ni à vous rechercher dans votre photothèque.</p>
 
-<h2>Ce que nous ne faisons pas</h2>
+<h3>Identifiant de l’appareil</h3>
+<p>Chaque requête à notre service porte l’« identifiant du fournisseur » attribué par iOS. Il est propre à chaque développeur, ce n’est pas l’identifiant publicitaire, et il change si vous supprimez toutes nos apps de l’iPhone puis les réinstallez. Nous l’utilisons pour appliquer les limites d’utilisation et maîtriser les coûts.</p>
+
+<h3>Abonnements</h3>
+<p>Les paiements sont traités par Apple ; nous ne voyons ni votre carte ni vos données de paiement. L’état de l’abonnement est géré par RevenueCat, qui reçoit un identifiant anonyme généré par son propre SDK, le reçu d’achat d’Apple et des données techniques de l’appareil (type d’appareil et version du système).</p>
+
+<h3>Météo</h3>
+<p>Si vous autorisez la localisation, l’app demande la météo à Open-Meteo avec votre position arrondie à deux décimales (un peu plus d’un kilomètre), au maximum une fois par heure. La requête va directement de l’iPhone à Open-Meteo ; nous ne la recevons pas. Sans autorisation, la météo est estimée selon la saison.</p>
+
+<h2>Ce que conserve notre service</h2>
 <ul>
-  <li>Nous ne vendons ni ne cédons vos données à qui que ce soit.</li>
-  <li>Aucune publicité, aucun réseau de pistage.</li>
-  <li>Aucune analyse tierce : ni Google Analytics, ni SDK Facebook, ni équivalent.</li>
-  <li>Nous ne créons pas de profils publicitaires et ne vous suivons pas d'une app à l'autre.</li>
+  <li><strong>Journal de consommation</strong>, dans une base de données dans l’UE (Francfort) : pour chaque numérisation avec finition studio et chaque essai « Voir sur moi », l’identifiant de l’appareil, le type d’utilisation, le modèle, la taille et la qualité, la durée, les jetons, le coût, un identifiant de requête et la date et l’heure. Il sert à appliquer les limites d’utilisation et à maîtriser les coûts.</li>
+  <li><strong>Journaux techniques</strong> du serveur : l’identifiant de l’appareil, le type d’utilisation, le coût, la durée, la raison technique en cas d’échec, et les données habituelles de toute requête web (adresse IP, app ou navigateur, chemin et heure).</li>
+  <li><strong>Nous ne conservons pas</strong> vos photos, votre avatar ni les images générées : ils sont traités pendant la requête puis supprimés.</li>
+</ul>
+
+<h2>Prestataires</h2>
+<ul>
+  <li><strong>OpenAI</strong> (États-Unis) : traite les photos, l’avatar et la composition pour la finition studio et « Voir sur moi ».</li>
+  <li><strong>Vercel</strong> (États-Unis) : héberge notre service.</li>
+  <li><strong>Supabase</strong> (UE, Francfort) : héberge le journal de consommation.</li>
+  <li><strong>RevenueCat</strong> (États-Unis) : état des abonnements.</li>
+  <li><strong>Apple</strong> : paiements, App Store et TestFlight.</li>
+  <li><strong>Open-Meteo</strong> : météo, uniquement avec l’autorisation de localisation.</li>
+</ul>
+<p>Certains de ces prestataires traitent des données hors de l’Espace économique européen. Ils le font en tant que sous-traitants, dans le cadre de leurs accords de traitement des données et des garanties qu’ils prévoient pour les transferts internationaux.</p>
+<p>En dehors de RevenueCat, l’app n’intègre aucun SDK tiers : ni publicité, ni analyse tierce, ni suivi entre apps.</p>
+
+<h2>Durée de conservation</h2>
+<ul>
+  <li><strong>Ce qui est sur votre iPhone :</strong> jusqu’à ce que vous le supprimiez ou désinstalliez l’app.</li>
+  <li><strong>Ce qui est envoyé à OpenAI :</strong> OpenAI ne l’utilise pas pour entraîner ses modèles. Il conserve ce qu’il reçoit via son API jusqu’à 30 jours pour surveiller les abus, sauf obligation légale plus longue. La description des attributs d’un vêtement peut en outre rester jusqu’à 30 jours dans son système.</li>
+  <li><strong>Journaux techniques du serveur :</strong> selon l’offre de l’hébergeur ; actuellement, une heure.</li>
+  <li><strong>Journal de consommation :</strong> tant que le service est actif, pour appliquer les limites. Vous pouvez demander sa suppression.</li>
+  <li><strong>Données d’abonnement :</strong> selon les conditions de RevenueCat en tant que sous-traitant.</li>
+</ul>
+
+<h2>Supprimer vos données</h2>
+<ul>
+  <li>Un vêtement ou une tenue : depuis son détail ou son menu.</li>
+  <li>Réglages → « Supprimer la photo » efface votre photo de référence, votre avatar et les essais générés.</li>
+  <li>Réglages → « Supprimer toute la garde-robe » efface les vêtements, les tenues, le calendrier et toutes les images de l’app (vêtements, photo de profil et essais générés). Cela <strong>n’efface pas</strong> votre nom ni votre profil de style, les lieux enregistrés, ni la photo de référence et l’avatar de « Voir sur moi » ; ceux-ci s’effacent avec « Supprimer la photo » ou en désinstallant l’app.</li>
+  <li>Désinstaller l’app efface tout ce qu’elle conserve sur l’iPhone (pas les sauvegardes déjà existantes).</li>
+  <li>Pour que nous supprimions le journal de consommation de votre appareil, écrivez-nous. Comme il n’y a pas de compte, nous vous aiderons à l’identifier (par exemple, par la date approximative d’utilisation).</li>
+</ul>
+
+<h2>Pourquoi nous traitons ces données</h2>
+<ul>
+  <li>Pour fournir les fonctions que vous demandez, y compris payantes (exécution du contrat).</li>
+  <li>La localisation et la photo de « Voir sur moi », parce que vous choisissez de les fournir et pouvez les retirer à tout moment (consentement).</li>
+  <li>Les limites d’utilisation et les journaux techniques, pour que le service fonctionne, ne soit pas détourné et que son coût reste maîtrisé (intérêt légitime).</li>
 </ul>
 
 <h2>Vos droits</h2>
-<p>Comme il n'y a pas de compte, le contrôle est direct : <strong>Réglages → Supprimer toute la
-garde-robe</strong> efface tout ce que l'app conserve, et la désinstallation emporte le reste. Si vous
-souhaitez que nous supprimions les enregistrements d'usage liés à votre appareil, écrivez-nous et nous
-le ferons.</p>
-<p>Si vous résidez dans l'UE, le Règlement général sur la protection des données s'applique. Responsable
-du traitement : Iván Sevilla. Contact : <a href="mailto:ivan.sevilla.ruano@gmail.com">ivan.sevilla.ruano@gmail.com</a>.</p>
+<p>Vous pouvez demander l’accès, la rectification, l’effacement, l’opposition, la limitation et la portabilité en écrivant à <a href="mailto:ivan.sevilla.ruano@gmail.com">ivan.sevilla.ruano@gmail.com</a>. Si vous estimez qu’ils n’ont pas été respectés, vous pouvez saisir l’Agence espagnole de protection des données (<a href="https://www.aepd.es">aepd.es</a>) ou votre autorité locale (en France, la CNIL).</p>
+
+<h2>Ce que nous ne faisons pas</h2>
+<p>Nous ne vendons ni ne cédons vos données. Pas de publicité, pas de profil publicitaire, pas de suivi entre apps.</p>
 
 <h2>Mineurs</h2>
-<p>Closet AI ne s'adresse pas aux enfants de moins de 13 ans et ne collecte pas sciemment leurs données.</p>
+<p>Closet AI ne s’adresse pas aux moins de 14 ans et ne collecte pas sciemment leurs données.</p>
 
 <h2>Modifications</h2>
-<p>Si cette politique change, nous mettrons à jour la date ci-dessus. Les changements importants seront
-annoncés dans l'app.</p>
+<p>Si cette politique change, nous mettrons à jour la date ci-dessus et vous informerons dans l’app des changements importants.</p>
 
-<h2>Contact</h2>
-<p><a href="mailto:ivan.sevilla.ruano@gmail.com">ivan.sevilla.ruano@gmail.com</a></p>
-
-<nav class="idiomas"><a href="/">Español</a><a href="/en/">English</a><a href="/fr/">Français</a></nav>
+<nav class="idiomas"><a href="/closet-ai/privacidad.html">Español</a><a href="/closet-ai/en/privacy.html">English</a><a href="/closet-ai/fr/confidentialite.html">Français</a></nav>
 <footer>Closet AI · Iván Sevilla</footer>
 </main>
 </body>
