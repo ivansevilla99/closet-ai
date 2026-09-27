@@ -12,7 +12,7 @@
 <header>
   <div class="marca">Closet AI</div>
   <h1>Politique de confidentialité</h1>
-  <p class="fecha">Dernière mise à jour : 26 septembre 2026. En cas de divergence, la version espagnole prévaut.</p>
+  <p class="fecha">Dernière mise à jour : 27 septembre 2026. En cas de divergence, la version espagnole prévaut.</p>
 </header>
 
 <p>Closet AI fonctionne presque entièrement sur votre iPhone. Voici ce qui reste sur l’appareil, ce qui en sort, quand, vers qui et pour combien de temps.</p>
@@ -46,10 +46,11 @@
 </ul>
 
 <h3>« Voir sur moi » (Closet AI Pro)</h3>
-<p>Uniquement lorsque vous touchez « Voir sur moi » ou « Actualiser sur moi », votre <strong>avatar</strong> (votre silhouette détourée de la photo de référence, visage et corps, sur un fond neutre) et une <strong>composition des vêtements</strong> de la tenue sont envoyés à notre service puis à OpenAI. OpenAI génère l’image de vous avec cette tenue, qui revient sur votre iPhone. La photo de référence d’origine ne quitte jamais l’iPhone. Elle ne sert pas à vous reconnaître ni à vous rechercher dans votre photothèque.</p>
+<p>Uniquement lorsque vous touchez « Voir sur moi » ou « Actualiser sur moi », votre <strong>avatar</strong> (votre silhouette détourée de la photo de référence, visage et corps, sur un fond neutre) et une <strong>composition des vêtements</strong> de la tenue, ou l’image d’<strong>un seul vêtement</strong> si vous le touchez depuis sa fiche, sont envoyés à notre service puis à OpenAI. OpenAI génère l’image de vous avec cette tenue ou ce vêtement, qui revient sur votre iPhone. La photo de référence d’origine ne quitte jamais l’iPhone. Elle ne sert pas à vous reconnaître ni à vous rechercher dans votre photothèque.</p>
 
-<h3>Identifiant de l’appareil</h3>
-<p>Chaque requête à notre service porte l’« identifiant du fournisseur » attribué par iOS. Il est propre à chaque développeur, ce n’est pas l’identifiant publicitaire, et il change si vous supprimez toutes nos apps de l’iPhone puis les réinstallez. Nous l’utilisons pour appliquer les limites d’utilisation et maîtriser les coûts.</p>
+<h3>Identifiants</h3>
+<p>Chaque requête à notre service porte <strong>la transaction de votre abonnement telle que signée par Apple</strong>. Nous la vérifions pour savoir que l’abonnement est actif, et nous n’en conservons que l’identifiant de l’abonnement, qui sert à appliquer les limites d’utilisation et à maîtriser les coûts. Elle contient le produit souscrit et ses dates, mais ni votre nom, ni votre identifiant Apple, ni vos données de paiement.</p>
+<p>Chaque requête porte aussi l’« identifiant du fournisseur » attribué par iOS, qui n’apparaît que dans les journaux techniques. Il est propre à chaque développeur, ce n’est pas l’identifiant publicitaire, et il change si vous supprimez toutes nos apps de l’iPhone puis les réinstallez.</p>
 
 <h3>Abonnements</h3>
 <p>Les paiements sont traités par Apple ; nous ne voyons ni votre carte ni vos données de paiement. L’état de l’abonnement est géré par RevenueCat, qui reçoit un identifiant anonyme généré par son propre SDK, le reçu d’achat d’Apple et des données techniques de l’appareil (type d’appareil et version du système).</p>
@@ -59,7 +60,7 @@
 
 <h2>Ce que conserve notre service</h2>
 <ul>
-  <li><strong>Journal de consommation</strong>, dans une base de données dans l’UE (Francfort) : pour chaque numérisation avec finition studio et chaque essai « Voir sur moi », l’identifiant de l’appareil, le type d’utilisation, le modèle, la taille et la qualité, la durée, les jetons, le coût, un identifiant de requête et la date et l’heure. Il sert à appliquer les limites d’utilisation et à maîtriser les coûts.</li>
+  <li><strong>Journal de consommation</strong>, dans une base de données dans l’UE (Francfort) : pour chaque numérisation avec finition studio, chaque lecture de photo et chaque essai « Voir sur moi », l’identifiant de l’abonnement (pour les utilisations antérieures au 27 septembre 2026, celui de l’appareil), le type d’utilisation, le modèle, la taille et la qualité, la durée, les jetons, le coût, un identifiant de requête et la date et l’heure. Il sert à appliquer les limites d’utilisation et à maîtriser les coûts.</li>
   <li><strong>Journaux techniques</strong> du serveur : l’identifiant de l’appareil, le type d’utilisation, le coût, la durée, la raison technique en cas d’échec, et les données habituelles de toute requête web (adresse IP, app ou navigateur, chemin et heure).</li>
   <li><strong>Nous ne conservons pas</strong> vos photos, votre avatar ni les images générées : ils sont traités pendant la requête puis supprimés.</li>
 </ul>
@@ -91,7 +92,7 @@
   <li>Réglages → « Supprimer la photo » efface votre photo de référence, votre avatar et les essais générés.</li>
   <li>Réglages → « Supprimer toute la garde-robe » efface les vêtements, les tenues, le calendrier et toutes les images de l’app (vêtements, photo de profil et essais générés). Cela <strong>n’efface pas</strong> votre nom ni votre profil de style, les lieux enregistrés, ni la photo de référence et l’avatar de « Voir sur moi » ; ceux-ci s’effacent avec « Supprimer la photo » ou en désinstallant l’app.</li>
   <li>Désinstaller l’app efface tout ce qu’elle conserve sur l’iPhone (pas les sauvegardes déjà existantes).</li>
-  <li>Pour que nous supprimions le journal de consommation de votre appareil, écrivez-nous. Comme il n’y a pas de compte, nous vous aiderons à l’identifier (par exemple, par la date approximative d’utilisation).</li>
+  <li>Pour que nous supprimions votre journal de consommation, écrivez-nous. Comme il n’y a pas de compte, nous vous aiderons à l’identifier (par exemple, par la date approximative d’utilisation).</li>
 </ul>
 
 <h2>Pourquoi nous traitons ces données</h2>
