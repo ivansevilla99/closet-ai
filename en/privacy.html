@@ -58,6 +58,8 @@
 
 <h3>Weather</h3>
 <p>If you allow location access, the app asks Open-Meteo for the weather using your location rounded to two decimals (just over a kilometre), at most once an hour. The request goes straight from the iPhone to Open-Meteo; we do not receive it. Without permission, the weather is estimated from the time of year.</p>
+<p>If you pack for a trip, the app sends Open-Meteo the destination name you type (to find it), then its coordinates and the trip dates (to know the weather there). It goes straight from the iPhone to Open-Meteo; we do not receive it. The trip, its looks and the packing list are stored only on your iPhone.</p>
+<p>The morning reminder and the “Today’s look” widget are prepared on your iPhone: there is no notification server and no data leaves the device. A backup is a file you save wherever you choose; we do not receive it.</p>
 
 <h2>What our service keeps</h2>
 <ul>
@@ -73,7 +75,7 @@
   <li><strong>Supabase</strong> (EU, Frankfurt): hosts the usage log.</li>
   <li><strong>RevenueCat</strong> (USA): subscription status.</li>
   <li><strong>Apple</strong>: payments, App Store and TestFlight.</li>
-  <li><strong>Open-Meteo</strong>: weather, only with location permission.</li>
+  <li><strong>Open-Meteo</strong>: weather, with location permission, and the destination of trips you pack for.</li>
 </ul>
 <p>Some of these providers process data outside the European Economic Area. They do so as processors, under their data processing agreements and the safeguards those agreements provide for international transfers.</p>
 <p>Apart from RevenueCat, the app includes no third-party SDKs: no advertising, no third-party analytics and no cross-app tracking.</p>
