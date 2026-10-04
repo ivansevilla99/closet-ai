@@ -55,6 +55,7 @@
 <h3>Suscripciones</h3>
 <p>Los pagos los procesa Apple; no vemos tu tarjeta ni tus datos de pago. El estado de la suscripción lo gestiona RevenueCat, que recibe un identificador anónimo generado por su propio SDK, el recibo de compra de Apple y datos técnicos del dispositivo (tipo de dispositivo y versión del sistema).</p>
 <p>Apple nos avisa cuando una suscripción se reembolsa, se revoca o vuelve a cobrarse. Si es un reembolso o una revocación, apuntamos el identificador de esa suscripción, junto con el motivo y la fecha, para dejar de darle servicio; si vuelve a haber un cobro, lo borramos. Ese aviso no incluye tu nombre, tu Apple ID ni datos de pago.</p>
+<p>Si compras un paquete de escaneos extra, la app nos manda esa compra tal como la firma Apple. Guardamos su identificador, el paquete, cuántos escaneos da, el entorno (compra real o de pruebas) y la fecha, junto al identificador de tu suscripción, para llevar tu saldo y no sumar dos veces la misma compra. Si Apple nos avisa de que se ha reembolsado, ese paquete deja de contar. No incluye tu nombre, tu Apple ID ni datos de pago.</p>
 
 <h3>El tiempo</h3>
 <p>Si das permiso de ubicación, la app pide el tiempo a Open-Meteo con tu ubicación redondeada a dos decimales (algo más de un kilómetro), como mucho una vez por hora. La petición va directa del iPhone a Open-Meteo; nosotros no la recibimos. Sin permiso, el tiempo se estima por la época del año.</p>
